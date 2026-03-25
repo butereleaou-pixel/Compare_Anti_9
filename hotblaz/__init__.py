@@ -11,4 +11,4 @@ from .COMPARE_UTILS import ( process_rule_based_generation, pre_mem, process_tab
             load_basic_rules, pre_thread_process, store_learn, pick_average_dis)
 
 # 可选：写版本号
-__version__ = "0.1.6"
+__version__ = "0.1.7"
