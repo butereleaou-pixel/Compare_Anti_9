@@ -8,7 +8,7 @@ build-backend = "setuptools.build_meta"
 project
 ]
 name = "hotblaz"
-version = "0.1.1"
+version = "0.1.2"
   { name="Mark_Leaou", email="mark.leaou@outlook.cn" }
 long_description = file: README.md
 long_description_content_type = "text/markdown"
@@ -26,3 +26,8 @@ dependencies = [
   "torch==2.5.1",
   "transformers==5.1.0",
 ]
+
+[
+tool.setuptools.packages.find
+]
+where = ["src"] 
