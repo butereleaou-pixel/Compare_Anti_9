@@ -1,14 +1,16 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "hotblaz"
-version = "0.1.7"
+version = "0.1.8"
 description = "Hotblaz vector processing package"
-long_description = "file: README.md"
-long_description_content_type = "text/markdown"
 requires-python = ">=3.8"
+
+authors = [
+  { name="Mark_Leaou", email="mark.leaou@outlook.cn" }
+]
 
 dependencies = [
   "numpy>=2.0.0",
