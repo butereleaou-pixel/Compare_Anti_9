@@ -1,0 +1,31 @@
+{
+    "generate": {
+        "mean_line_ratio": 0.996,
+        "ignore_count": 3,
+        "temperature":0.933,
+        "temperature_compare":0.795
+        
+    },
+    "backup": {
+        "mean_line_ratio": 0.995,
+        "ignore_count": 3,
+        "temperature":0.932,
+        "temperature_compare":0.78
+    },
+    "backup2": {
+        "mean_line_ratio": 0.9975,
+        "ignore_count": 3,
+        "temperature":0.932,
+        "temperature_compare":0.78
+    },
+    "backup3": {
+        "mean_line_ratio": 0.996,
+        "ignore_count": 3,
+        "temperature":0.932,
+        "temperature_compare":0.795
+        
+    }
+}
+
+
+
