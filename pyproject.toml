@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "hotblaz"
-version = "0.1.8"
+version = "0.1.9"
 description = "Hotblaz vector processing package"
 requires-python = ">=3.8"
 
