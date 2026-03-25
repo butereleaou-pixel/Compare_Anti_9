@@ -1,30 +1,27 @@
 name: Publish to PyPI
-
 on:
   push:
     tags:
-      - 'v*'  # 当你打 v1.0.0 这类标签时自动发布
-
+      - 'v*'  # 打v开头标签触发发布
 jobs:
   build-n-publish:
     runs-on: ubuntu-latest
+    environment: pypi  # 与PyPI配置的Environment name一致（若留空则删除此行）
+    permissions:
+      id-token: write  # Trusted Publisher强制要求的OIDC权限，必须加
+      contents: read   # 读取仓库代码
     steps:
       - uses: actions/checkout@v4
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.10"
-
+          python-version: "3.8+"  # 适配你的项目Python版本
       - name: Install build tools
         run: |
           python -m pip install --upgrade pip
-          pip install build twine
-
-      - name: Build package
-        run: python -m build
-
+          pip install build
+      - name: Build Python package
+        run: python -m build  # 生成whl和tar.gz包
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
-        with:
-          password: ${{ secrets.PYPI_TOKEN }}
+        # 无需任何token配置！OIDC自动完成认证
