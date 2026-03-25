@@ -8,8 +8,8 @@ build-backend = "setuptools.build_meta"
 project
 ]
 name = "hotblaz"
-version = "0.0.9"
-description = "Hotblaz vector processing package"
+version = "0.1.1"
+  { name="Mark_Leaou", email="mark.leaou@outlook.cn" }
 long_description = file: README.md
 long_description_content_type = "text/markdown"
 requires-python = ">=3.10,<3.11"
