@@ -8,11 +8,11 @@ build-backend = "setuptools.build_meta"
 project
 ]
 name = "hotblaz"
-version = "0.1.2"
+version = "0.1.4"
   { name="Mark_Leaou", email="mark.leaou@outlook.cn" }
 long_description = file: README.md
 long_description_content_type = "text/markdown"
-requires-python = ">=3.10,<3.11"
+requires-python = ">=3.8"
 keywords = ["hotblaz", "vector", "nlp", "torch"]
 authors = [
   { name="butereleaou-pixel", email="betereleaou@gmail.com" }
@@ -23,11 +23,5 @@ dependencies = [
   "pandas==3.0.1",
   "PyYAML==6.0.3",
   "requests==2.32.5",
-  "torch==2.5.1",
-  "transformers==5.1.0",
 ]
 
-[
-tool.setuptools.packages.find
-]
-where = ["src"] 
